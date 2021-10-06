@@ -27,11 +27,11 @@ provider "aws" {
 # RESOURCES
 #######################
 resource "aws_instance" "bastion" {
-  ami           = "ami-0470393e21948091e"
-  instance_type = "t2.nano"
-  #vpc_id        = "vpc-03042df8d312f746d"
-  subnet_id     = "subnet-0f57dcd9fa52d67df"
-  key_name      = "ik9421217-bastion-key-ppk"
+  ami           = "XXXXXX"
+  instance_type = "XXXXXXX"
+  #vpc_id        = "XXXXXXX"
+  subnet_id     = "XXXXXX"
+  key_name      = "XXXXXX"
   vpc_security_group_ids = [aws_security_group.cci-bastion-1.id]
   tags = {
     Name  = "cci-ik9421217-bastion-1"
